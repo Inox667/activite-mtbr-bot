@@ -1,0 +1,24 @@
+{
+  "name": "mtbr-game-bot",
+  "version": "1.0.0",
+  "description": "Bot Discord de jeu complet pour le serveur MTBR : XP, niveaux, coins, classements, économie, boutique, jeux, succès, missions, prestige.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "deploy:global": "node src/deploy-commands.js --global",
+    "check": "node --check src/index.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "gifenc": "^1.0.3"
+  },
+  "optionalDependencies": {
+    "@napi-rs/canvas": "^0.1.65"
+  }
+}
